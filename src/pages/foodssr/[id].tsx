@@ -1,10 +1,13 @@
 import React from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/router';
+import { FoodDetail } from './Foodssr.interface';
+import { GetServerSidePropsContext } from 'next';
 
-export async function getServerSideProps(context: any) {
+export async function getServerSideProps(context: GetServerSidePropsContext) {
   const apiUrl: string = process.env.NEXT_PUBLIC_API_URL ?? '';
-  const res = await axios.get(`${apiUrl}/${context.params.id}`, {
+  const params = context.params ?? { id: '' };
+  const res = await axios.get(`${apiUrl}/foods/${params.id}`, {
     headers: {
       'Content-Type': 'application/json',
       apiKey: process.env.NEXT_PUBLIC_API_KEY ?? '',
@@ -13,7 +16,7 @@ export async function getServerSideProps(context: any) {
   return { props: { food: res.data.data } };
 }
 
-const FoodDetailSSRMethod = ({ food }: any) => {
+const FoodDetailSSRMethod = ({ food }: FoodDetail) => {
   const router = useRouter();
   return (
     <div>
