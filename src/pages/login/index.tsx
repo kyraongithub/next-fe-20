@@ -1,3 +1,4 @@
+import Button from '@/components/UI/button';
 import useLogin from './useLogin';
 
 const LoginPage = () => {
@@ -14,7 +15,7 @@ const LoginPage = () => {
         onChange={(e) => setformData({ ...formData, password: e.target.value })}
         placeholder="password"
       />
-      <button onClick={handleFormLogin}>Login</button>
+      <Button onclick={handleFormLogin}>Login</Button>
     </div>
   );
 };
