@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Food Page should render food page 1`] = `
+<div>
+  <div>
+    Food list page
+    <p>
+      loading
+    </p>
+  </div>
+</div>
+`;

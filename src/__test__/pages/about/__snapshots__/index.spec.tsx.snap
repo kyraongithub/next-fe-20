@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About Page should render about page 1`] = `
+<div>
+  <div>
+    AboutPage
+  </div>
+</div>
+`;

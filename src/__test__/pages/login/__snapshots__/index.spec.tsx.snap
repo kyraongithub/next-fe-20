@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Page should click login button 1`] = `
+<div>
+  <div>
+    <input
+      placeholder="email"
+      type="text"
+    />
+    <input
+      placeholder="password"
+      type="password"
+    />
+    <button>
+      Login
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Login Page should render login page 1`] = `
+<div>
+  <div>
+    <input
+      placeholder="email"
+      type="text"
+    />
+    <input
+      placeholder="password"
+      type="password"
+    />
+    <button>
+      Login
+    </button>
+  </div>
+</div>
+`;
